@@ -1,4 +1,4 @@
-import joblib 
+from sklearn.externals import joblib
 import streamlit as st
 from numpy import array
 import pandas as pd
