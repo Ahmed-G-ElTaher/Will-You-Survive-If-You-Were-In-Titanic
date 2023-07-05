@@ -1,7 +1,8 @@
+import joblib 
 import streamlit as st
 from numpy import array
 import pandas as pd
-import joblib 
+
 
 
 st.set_page_config(
