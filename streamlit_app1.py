@@ -36,8 +36,10 @@ st.header("To Know If You Lucky To Survive ")
 '---------------------------------------------'
 
 
+with open('https://github.com/Ahmed-G-ElTaher/Will-You-Survive-If-You-Were-In-Titanic/blob/main/model.pkl', 'rb') as f:
+    model = pickle.load(f)
 
-model = pickle.load(open('https://github.com/Ahmed-G-ElTaher/Will-You-Survive-If-You-Were-In-Titanic/blob/main/model.pkl', 'rb'))
+#model = pickle.load(open('https://github.com/Ahmed-G-ElTaher/Will-You-Survive-If-You-Were-In-Titanic/blob/main/model.pkl', 'rb'))
 
 
 columns = ['Sex','Age','Pclass','Fare','Embarked','SibSp','Parch']
