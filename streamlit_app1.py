@@ -1,11 +1,4 @@
-import subprocess
-import sys
-
-def install(package):
-    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
-
-install(joblib)
-import joblib
+import pickle
 import streamlit as st
 from numpy import array
 import pandas as pd
@@ -44,7 +37,7 @@ st.header("To Know If You Lucky To Survive ")
 
 
 
-model = joblib.load('cat.joblib')
+model = pickle.load(open('model.pkl', 'rb'))
 
 
 columns = ['Sex','Age','Pclass','Fare','Embarked','SibSp','Parch']
