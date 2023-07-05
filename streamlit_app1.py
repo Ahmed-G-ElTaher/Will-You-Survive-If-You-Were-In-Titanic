@@ -35,8 +35,8 @@ st.header("To Know If You Lucky To Survive ")
 '---------------------------------------------'
 
 
-
-model = pickle.load(open('model.pkl', 'rb'))
+model = pickle.loads('model.pkl'.read())
+#model = pickle.load(open('model.pkl', 'rb'))
 
 
 columns = ['Sex','Age','Pclass','Fare','Embarked','SibSp','Parch']
