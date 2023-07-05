@@ -1,4 +1,3 @@
-import sklearn.external.joblib 
 import joblib
 import streamlit as st
 from numpy import array
