@@ -2,7 +2,7 @@ import pickle
 import streamlit as st
 from numpy import array
 import pandas as pd
-import xgboost
+from sklearn.linear_model import LogisticRegression
 
 
 st.set_page_config(
