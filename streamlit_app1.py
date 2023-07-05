@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-#import joblib
+from joblib import load 
 
 
 st.set_page_config(
@@ -36,7 +36,7 @@ st.header("To Know If You Lucky To Survive ")
 
 
 
-model = joblib.load('cat.joblib')
+model = load('cat.joblib')
 
 
 columns = ['Sex','Age','Pclass','Fare','Embarked','SibSp','Parch']
