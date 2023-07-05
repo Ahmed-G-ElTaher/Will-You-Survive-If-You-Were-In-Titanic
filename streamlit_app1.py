@@ -2,6 +2,8 @@ import pickle
 import streamlit as st
 from numpy import array
 import pandas as pd
+import os
+
 
 st.set_page_config(
     page_title='Will You Survive If You Were In Titanic ? :ship:',
@@ -33,9 +35,13 @@ st.header("To Know If You Lucky To Survive ")
 
 '---------------------------------------------'
 
+# Preparing the Classifier
+cur_dir = os.path.dirname(__file__)
+clf = pickle.load(open(os.path.join(cur_dir,
+			'model.pkl'), 'rb'))
 
 
-model = pickle.load(open('model.pkl', 'rb'))
+#model = pickle.load(open('model.pkl', 'rb'))
 
 
 columns = ['Sex','Age','Pclass','Fare','Embarked','SibSp','Parch']
