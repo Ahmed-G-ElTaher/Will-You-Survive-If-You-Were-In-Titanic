@@ -1,7 +1,7 @@
 import streamlit as st
-import numpy as np
+from numpy import array
 import pandas as pd
-from joblib import joblib.load 
+import joblib 
 
 
 st.set_page_config(
@@ -89,7 +89,7 @@ if Fare :
     trigger = st.button('Predict Your Fate',use_container_width=True,type='primary')
 
     if trigger :
-        row = np.array([Sex,Age,Pclass,Fare,Embarked,SibSp,Parch]) 
+        row = array([Sex,Age,Pclass,Fare,Embarked,SibSp,Parch]) 
         X = pd.DataFrame([row], columns = columns)
         prediction = model.predict(X)
         if prediction[0] == 1: 
