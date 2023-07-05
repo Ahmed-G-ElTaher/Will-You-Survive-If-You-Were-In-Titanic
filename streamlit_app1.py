@@ -2,7 +2,7 @@ import pickle
 import streamlit as st
 from numpy import array
 import pandas as pd
-
+import catboost 
 
 
 st.set_page_config(
