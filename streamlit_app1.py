@@ -77,12 +77,12 @@ if Fare :
     room = data[data['Fare'] >= Fare]['Cabin'].dropna().sample(n=1).values[0]
     cabin = st.write("Your Cabin Is: ", room)
 
-    if Embarked == 'C' :
-        Embarked = 0
-    elif Embarked == 'S' :
-        Embarked = 2
-    else :
-        Embarked = 1
+if Embarked == 'C' :
+    Embarked = 0
+elif Embarked == 'S' :
+    Embarked = 2
+else :
+    Embarked = 1
 
     
 
