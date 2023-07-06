@@ -87,7 +87,7 @@ if Fare :
 
 trigger = st.button('Predict Your Fate')
 
-
+Pclass = C
 columns = ['Sex','Age','Pclass','Fare','Embarked','SibSp','Parch']
 if trigger :
     row = array([Sex,Age,Pclass,Fare,Embarked,SibSp,Parch]) 
