@@ -85,24 +85,24 @@ if Fare :
 
     
 
-    trigger = st.button('Predict Your Fate',use_container_width=True,type='primary')
+trigger = st.button('Predict Your Fate',use_container_width=True,type='primary')
 
-    if trigger :
-        row = array([Sex,Age,Pclass,Fare,Embarked,SibSp,Parch]) 
-        X = pd.DataFrame([row], columns = columns)
-        prediction = model.predict(X)
-        if prediction[0] == 1: 
-                st.write('Passenger Survived :thumbsup:')
-                with st.expander("Your Fate",expanded=True):
-                    st.write("Don't worry you are in survive boat.")
-                    st.image("https://cdn.arstechnica.net/wp-content/uploads/2023/02/jack5.jpg")
-        else: 
-            st.write('Passenger did not Survive :thumbsdown:')
-            if Sex0 == 'male' :
-                with st.expander("Your Fate",expanded=True):
-                        st.write("unfortunately, you didn't Survive.")
-                        st.image("https://thumbs.gfycat.com/DifficultNimbleAntbear-size_restricted.gif")
-            else :
-                with st.expander("Your Fate",expanded=True):
-                        st.write("unfortunately, you didn't Survive.")
-                        st.image("https://s3.amazonaws.com/snwceomedia/ame-egl/ebb15fca-2426-412c-b7f2-dba39077efb2.sized-1000x1000.gif?w=1000")
+if trigger :
+    row = array([Sex,Age,Pclass,Fare,Embarked,SibSp,Parch]) 
+    X = pd.DataFrame([row])
+    prediction = model.predict(X)
+    if prediction[0] == 1: 
+            st.write('Passenger Survived :thumbsup:')
+            with st.expander("Your Fate",expanded=True):
+                st.write("Don't worry you are in survive boat.")
+                st.image("https://cdn.arstechnica.net/wp-content/uploads/2023/02/jack5.jpg")
+    else: 
+        st.write('Passenger did not Survive :thumbsdown:')
+        if Sex0 == 'male' :
+            with st.expander("Your Fate",expanded=True):
+                    st.write("unfortunately, you didn't Survive.")
+                    st.image("https://thumbs.gfycat.com/DifficultNimbleAntbear-size_restricted.gif")
+        else :
+            with st.expander("Your Fate",expanded=True):
+                    st.write("unfortunately, you didn't Survive.")
+                    st.image("https://s3.amazonaws.com/snwceomedia/ame-egl/ebb15fca-2426-412c-b7f2-dba39077efb2.sized-1000x1000.gif?w=1000")
