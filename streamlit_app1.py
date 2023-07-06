@@ -38,7 +38,7 @@ st.header("To Know If You Lucky To Survive ")
 model = pickle.load(open('model.pkl', 'rb'))
 
 
-columns = ['Sex','Age','Pclass','Fare','Embarked','SibSp','Parch']
+
 
 name  = st.text_input("Input Your Name : ", 'John Smith')
 Sex0 = st.selectbox("Choose Your Gender : ", ['male','female'])
@@ -87,9 +87,11 @@ if Fare :
 
 trigger = st.button('Predict Your Fate',use_container_width=True,type='primary')
 
+
+columns = ['Sex','Age','Pclass','Fare','Embarked','SibSp','Parch']
 if trigger :
     row = array([Sex,Age,Pclass,Fare,Embarked,SibSp,Parch]) 
-    X = pd.DataFrame([row])
+    X = pd.DataFrame([row],columns=columns)
     prediction = model.predict(X)
     if prediction[0] == 1: 
             st.write('Passenger Survived :thumbsup:')
