@@ -30,7 +30,7 @@ st.markdown("<br>",unsafe_allow_html=True)
 st.markdown("<br>",unsafe_allow_html=True)
 '---------------------------------------------'
 st.header("Input Your Data 📑 ")
-st.header("To Know If You Lucky To Survive ")
+st.header("To Know If You Lucky To Survive ♻ ")
 
 '---------------------------------------------'
 
@@ -97,15 +97,15 @@ if trigger :
     if prediction[0] == 1: 
             st.write('Passenger Survived :thumbsup:')
             with st.expander("Your Fate",expanded=True):
-                st.write("Don't worry you are in survive boat.")
+                st.write("Don't worry you are in survive boat. 😄 ")
                 st.image("https://cdn.arstechnica.net/wp-content/uploads/2023/02/jack5.jpg")
     else: 
         st.write('Passenger did not Survive :thumbsdown:')
         if Sex0 == 'male' :
             with st.expander("Your Fate",expanded=True):
-                    st.write("unfortunately, you didn't Survive.")
+                    st.write("unfortunately, you didn't Survive. 😞 ")
                     st.image("https://thumbs.gfycat.com/DifficultNimbleAntbear-size_restricted.gif")
         else :
             with st.expander("Your Fate",expanded=True):
-                    st.write("unfortunately, you didn't Survive.")
+                    st.write("unfortunately, you didn't Survive. 😞 ")
                     st.image("https://s3.amazonaws.com/snwceomedia/ame-egl/ebb15fca-2426-412c-b7f2-dba39077efb2.sized-1000x1000.gif?w=1000")
