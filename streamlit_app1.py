@@ -53,6 +53,7 @@ Embarked = st.selectbox("Choose Your Port of Embarkation (C = Cherbourg; Q = Que
 
 Fare = st.number_input("Input Fare Price You Will Pay To Book A Ticket : ", 0,520)
 
+C=1
 if Fare :
     id = data[data['Fare'] >= Fare]['PassengerId'].sample(n=1).values[0]
     passengerid = st.write("Your ID Passenger Is: ", id) 
