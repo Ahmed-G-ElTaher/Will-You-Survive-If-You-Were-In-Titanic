@@ -85,7 +85,7 @@ if Fare :
 
     
 
-trigger = st.button('Predict Your Fate',type='primary',on_click='nonlocal')
+trigger = st.button('Predict Your Fate',on_click='nonlocal')
 
 
 columns = ['Sex','Age','Pclass','Fare','Embarked','SibSp','Parch']
