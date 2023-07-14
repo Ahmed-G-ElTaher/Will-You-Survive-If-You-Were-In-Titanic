@@ -19,7 +19,7 @@ st.image('https://www.financialexpress.com/wp-content/uploads/2023/06/Sub-Cover.
 st.title('Will You Survive If You Were In Titanic ? :ship:')
 
 '''
-    [![Repo](https://badgen.net/badge/icon/GitHub?icon=github&label)](https://github.com/Ahmed-G-ElTaher/Churn-Model-on-Data-Science-and-Analytics-Virtual-Intern-at-BCG)
+    [![Repo](https://badgen.net/badge/icon/GitHub?icon=github&label)](https://github.com/Ahmed-G-ElTaher/Will-You-Survive-If-You-Were-In-Titanic)
 '''
 st.markdown("<br>",unsafe_allow_html=True)
 '''
